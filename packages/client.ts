@@ -35,5 +35,3 @@ export const setupGraphqlClient = (opts: ClientOptions) => {
 export const useGraphqlClient = () => {
   return client;
 };
-
-export default client;

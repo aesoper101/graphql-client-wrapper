@@ -1,8 +1,6 @@
 import { App } from "vue";
 import { ClientOptions } from "@urql/vue";
-import { setupGraphqlClient } from "./client";
-
-export * from "./client";
+import { setupGraphqlClient, useGraphqlClient } from "./client";
 
 const GraphqlClientPlugin = {
   install: (app: App, options: ClientOptions) => {
@@ -11,3 +9,4 @@ const GraphqlClientPlugin = {
 };
 
 export default GraphqlClientPlugin;
+export { setupGraphqlClient, useGraphqlClient };
